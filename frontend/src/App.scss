@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+// ===========================================================================================================================
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  .arrow {
+    background-color: #585858;
+    border-radius: 15px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    box-shadow: 0px 0px 34px 0px rgba(0, 0, 0, 0.25);
+
+    img {
+      width: 38px;
+
+      &.right {
+        transform: rotateY(180deg);
+      }
+    }
+  }
+
+  .cube {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 30px;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    background-color: #585858;
+    height: auto;
+    margin: 0 20px;
+    padding-top: 3rem;
+    box-shadow: 0px 0px 34px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+
+    .page {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      font-weight: 600;
+      color: #fff;
+      top: 15px;
+      left: 10px;
+
+      p {
+        margin: 0;
+      }
+    }
+
+    .add {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 25px;
+      color: #000;
+      top: 10px;
+      right: 0px;
+      background-color: #00F6AD;
+      border-radius: 40px;
+      padding: 8px 30px;
+      transform: translateX(50%);
+    }
+
+    .quote {
+      font-size: 27px;
+      font-weight: 400;
+      color: #fff;
+      margin: 0;
+      margin-top: 20px;
+      text-align: initial;
+      height: calc(35vw * 0.9);
+      min-height: 60vh;
+      width: 35vw;
+      overflow: auto;
+      -ms-overflow-style: none;
+      /* IE and Edge */
+      scrollbar-width: none;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      p {
+        margin: 0;
+        text-align: left;
+        font-weight: 500;
+      }
+
+      img.bas {
+        text-align: right;
+      }
+    }
+
+    .footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 10px;
+      width: 100%;
+
+      .left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+        img {
+          width: 46px;
+          height: 46px;
+        }
+
+        p {
+          font-style: italic;
+          font-size: 23px;
+          font-weight: 500;
+          color: #fff;
+        }
+      }
+
+      .right>p {
+        font-style: italic;
+        font-size: 23px;
+        font-weight: 500;
+        color: #fff;
+      }
+    }
+
+    div.progress {
+      width: 100%;
+      height: 10px;
+      background-color: #7C7C7C;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+
+      hr {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 100%;
+        background-color: #00F6AD;
+        margin: 0;
+        border: none;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+  }
+
+
+}
